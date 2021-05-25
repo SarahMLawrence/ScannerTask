@@ -22,27 +22,48 @@ public class Runner {
 		boolean flag = true;
 
 		do {
-			System.out.println("Please Make Your Choice: " + "\n1. Addition" + "\n2: Subtraction" + "\n3. Multiply"
+			System.out.println("\nPlease Make Your Choice: " + "\n1. Addition" + "\n2: Subtraction" + "\n3. Multiply"
 					+ "\n4. Divide");
 
 			result = scanner.nextInt();
+			int x, y;
 			switch (result) {
 			case 1:
-				System.out.println(addOption(10, 5));
+				System.out.println(" You choose ADDITION!");
+				System.out.println("Enter 1st number: ");
+				x = scanner.nextInt();
+				System.out.print("Enter 2nd number: ");
+				y = scanner.nextInt();
+				System.out.print("\nAnswer: " + addOption(x, y) + "\n\n");
 				break;
 			case 2:
-				System.out.println(subOption(20, 2));
+				System.out.println(" You choose SUBTRACTION!");
+				System.out.println("Enter 1st number: ");
+				x = scanner.nextInt();
+				System.out.print("Enter 2nd number: ");
+				y = scanner.nextInt();
+				System.out.println("\nAnswer: " + subOption(x, y) + "\n\n");
 				break;
 			case 3:
-				System.out.println(multOption(4, 5));
+				System.out.println(" You choose MULTIPLICATION!");
+				System.out.println("Enter 1st number: ");
+				x = scanner.nextInt();
+				System.out.print("Enter 2nd number: ");
+				y = scanner.nextInt();
+				System.out.println("\nAnswer: " + multOption(x, y) + "\n\n");
 				break;
 
 			case 4:
-				System.out.println(divOption(20, 10));
+				System.out.println(" You choose DIVISON!");
+				System.out.println("Enter 1st number: ");
+				x = scanner.nextInt();
+				System.out.print("Enter 2nd number: ");
+				y = scanner.nextInt();
+				System.out.println("\nAnswer: " + divOption(x, y) + "\n\n");
 				break;
 
 			case 0:
-				System.out.println("exiting app");
+				System.out.println("Thank you for using the Math Class! Goodbye!");
 				flag = false;
 				break;
 			default:
