@@ -102,7 +102,7 @@ public class Runner {
 	// ---------------//
 	// DIVIDE METHOD //
 	// ---------------//
-	public static int divOption(int num1, int num2) {
+	public static int divOption(int num1, int num2) throws ArithmeticException {
 		return num1 / num2;
 	}
 }
