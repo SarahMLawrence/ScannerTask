@@ -57,18 +57,30 @@ public class Runner {
 
 	}
 
+	// ------------//
+	// ADD METHOD //
+	// ------------//
 	public static int addOption(int num1, int num2) {
 		return num1 + num2;
 	}
 
+	// -----------------//
+	// SUBTRACT METHOD //
+	// -----------------//
 	public static int subOption(int num1, int num2) {
 		return num1 - num2;
 	}
 
+	// -----------------//
+	// MULTIPLY METHOD //
+	// -----------------//
 	public static int multOption(int num1, int num2) {
 		return num1 * num2;
 	}
 
+	// ---------------//
+	// DIVIDE METHOD //
+	// ---------------//
 	public static int divOption(int num1, int num2) {
 		return num1 / num2;
 	}
