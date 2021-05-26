@@ -61,6 +61,8 @@ public class Runner {
 					System.out.print("Enter 2nd number: ");
 					y = scanner.nextInt();
 
+					if (x == 0 | y == 0)
+						throw new ArithmeticException();
 					System.out.println("\nAnswer: " + divOption(x, y) + "\n\n");
 				} catch (ArithmeticException e) {
 					System.out.println("Cannot Divide by 0");
