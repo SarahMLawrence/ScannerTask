@@ -54,12 +54,17 @@ public class Runner {
 				break;
 
 			case 4:
-				System.out.println(" You choose DIVISON!");
-				System.out.println("Enter 1st number: ");
-				x = scanner.nextInt();
-				System.out.print("Enter 2nd number: ");
-				y = scanner.nextInt();
-				System.out.println("\nAnswer: " + divOption(x, y) + "\n\n");
+				try {
+					System.out.println(" You choose DIVISON!");
+					System.out.println("Enter 1st number: ");
+					x = scanner.nextInt();
+					System.out.print("Enter 2nd number: ");
+					y = scanner.nextInt();
+
+					System.out.println("\nAnswer: " + divOption(x, y) + "\n\n");
+				} catch (ArithmeticException e) {
+					System.out.println("Cannot Divide by 0");
+				}
 				break;
 
 			case 0:
@@ -102,7 +107,9 @@ public class Runner {
 	// ---------------//
 	// DIVIDE METHOD //
 	// ---------------//
-	public static int divOption(int num1, int num2) throws ArithmeticException {
+	public static int divOption(int num1, int num2) {
+
 		return num1 / num2;
+
 	}
 }
